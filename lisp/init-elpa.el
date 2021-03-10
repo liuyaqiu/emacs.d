@@ -155,7 +155,10 @@
     workgroups2
     zoutline
     company-c-headers
-    company-statistics)
+    company-statistics
+    lsp-mode
+    lv-0
+    company-lsp)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
