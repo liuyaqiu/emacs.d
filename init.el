@@ -185,3 +185,30 @@
 ;;; no-byte-compile: t
 ;;; End:
 (put 'erase-buffer 'disabled nil)
+
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+
+;; use FoxitReader to open pdf file
+(add-to-list 'load-path "/home/liuyaqiu/.emacs.d/local-app")
+(require 'openwith)
+(setq openwith-associations '(("\\.pdf\\'" "FoxitReader" (file))))
+(openwith-mode t)
+
+(setq-default fill-column 80)
+
+;; (setq-default left-margin-width 1 right-margin-width 1) ; Define new widths.
+;; (set-window-buffer nil (current-buffer)) ; Use them now.
+
+(setq x-select-enable-clipboard t)
+
+(set-frame-font "Source Code Pro 12")
+
+(setq make-backup-files nil)
+
+
+(require 'evil)
+(evil-mode 1)
+
+(add-hook 'prog-mode-hook #'show-paren-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
