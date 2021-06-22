@@ -190,10 +190,10 @@
                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 ;; use FoxitReader to open pdf file
-(add-to-list 'load-path "/home/liuyaqiu/.emacs.d/local-app")
-(require 'openwith)
-(setq openwith-associations '(("\\.pdf\\'" "FoxitReader" (file))))
-(openwith-mode t)
+;; (add-to-list 'load-path "/home/liuyaqiu/.emacs.d/local-app")
+;; (require 'openwith)
+;; (setq openwith-associations '(("\\.pdf\\'" "FoxitReader" (file))))
+;; (openwith-mode t)
 
 (setq-default fill-column 80)
 
@@ -201,8 +201,6 @@
 ;; (set-window-buffer nil (current-buffer)) ; Use them now.
 
 (setq x-select-enable-clipboard t)
-
-(set-frame-font "Source Code Pro 12")
 
 (setq make-backup-files nil)
 
