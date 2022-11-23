@@ -105,7 +105,7 @@ If no files marked, always operate on current line in dired-mode."
                 my-dired-new-file-first-dirs)
     (setq dired-actual-switches "-lat"))
 
-  (dired-hide-details-mode nil)
+  (setq dired-hide-details-mode nil)
   (diredfl-mode)
   (unless dired-subdir-alist (dired-build-subdir-alist))
   (local-set-key  "r" 'dired-up-directory)
